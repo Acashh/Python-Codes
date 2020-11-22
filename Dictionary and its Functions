@@ -1,0 +1,35 @@
+# Python-Codes
+#Dictionary is the Data Structure in the pyton
+#Dictionary is nothing but key value pair
+d1 = {}
+print(type(d1))
+#case sensitive means anything with small letter is considered
+#different than the capital letter
+d2 = {"Aakash":"Veg Pulao" , "Govind": "Chicken", "Vinesh": "Burger",
+      "Munesh": "Tikka"}
+print(d2)
+print(d2["Aakash"])
+#we can also put dictionary inside the dictionary
+d3 = {"Aakash": {"B": "Bread", "L": "Pulao", "D":"Roti"}}
+print(d3)
+print(d3["Aakash"])
+print(d3["Aakash"]["L"])
+#add something in the dictionary
+d3["Hinesh"] = "Egg"
+print(d3)
+#remove somththing from the dictionary
+del d3["Hinesh"]
+print(d3)
+#functions in Dictionary
+#by using copy functions any change in other dictionary
+#does not change the original dictionary
+d4 = d3.copy()
+del d4["Aakash"]
+print(d4)
+print(d3)
+print(d3.get("Aakash"))
+d3.update({"Hinesh": "Egg"} )
+print(d3)
+print(d3.keys())
+#break dictionary items into tuples
+print(d3.items())
