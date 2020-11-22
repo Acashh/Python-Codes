@@ -1,0 +1,11 @@
+# Python-Codes
+age = int(input("Age must be Greater than 5 and less than 80\n"
+                "Enter You Age: "))
+if age > 18 and age < 80:
+    print("You can Drive..")
+
+elif age == 18:
+    print("You should come physically then we should decide wh"
+          "ehter you are eligible or not")
+else:
+    print("You cannot Drive.. ")
